@@ -6,29 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tgi.in</title>
     <link rel="stylesheet" href="style.css">
+    <!-- AOS Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        const current = window.location.pathname.split("/").pop();
+        const links = document.querySelectorAll(".nav-link");
+
+        links.forEach(link => {
+            if (link.getAttribute("href") === current) {
+                link.classList.add("active");
+            }
+        });
+    </script>
+
+
 </head>
 
 <body>
     <nav>
         <div class="navflex">
-            <span><img src="TGI LOGO.jpg" alt="TGI" class="tgilogo"></span>
+            <span><img src="TGI LOGO(OG).png" alt="TGI" class="tgilogo"></span>
             <ul>
-                <a href="">
+                <a href="" class=" nav-links active">
                     <li>Home</li>
                 </a>
-                <a href="">
+                <a href="" class=" nav-links">
                     <li>Gallery</li>
                 </a>
-                <a href="">
+                <a href="" class=" nav-links">
                     <li>Achievements</li>
                 </a>
-                <a href="">
+                <a href="" class=" nav-links">
                     <li>Domain</li>
                 </a>
-                <a href="">
+                <a href="" class=" nav-links">
                     <li>Sponsers</li>
                 </a>
-                <a href="">
+                <a href="" class=" nav-links">
                     <li>Join Us</li>
                 </a>
             </ul>
@@ -39,9 +53,104 @@
         </div>
     </nav>
     <video autoplay muted playsinline src="Griffin.mp4" id="Video"></video>
+
     <br>
     <main>
+
+        <section data-aos="zoom-in" class="scroll shadow">
+            <h1>Chasing the Blue</h1>
+        </section>
+        <br>
+        <section data-aos="zoom-in" class="gap shadow">
+            <h1>Where Dreams takes Flight </h1>
+        </section>
+        <section data-aos="fade-left">
+            <div class="box floatleft">
+                
+                <h1>What We Do</h1>
+                <p>Our Extremely skilled aeronautics team can build
+                    any aircraft from scratch and compete
+                    amongst Top National Teams in the SAE Aero Design Challenges.</p>
+
+            </div>
+
+        </section>
+        <section data-aos="fade-right">
+            <div class="box floatright">
+
+                <h1>How We Do</h1>
+                <p>Our Experienced Team has been internally assigned
+                    to various domains that work cohesively to make
+                    our models come reality. All analysis is done in
+                    house to prove and validate design to be then
+                    handed over the manufacturing and avionics
+                    experts to produce the aircraft.</p>
+            </div>
+
+        </section>
+        <section data-aos="fade-left">
+            <div class="box floatleft">
+                <h1>Why We Do</h1>
+                <p>We believe that every young enthusiast has the
+                    capability of making something new and
+                    innovative.Team Griffin is the home where we get
+                    to make and explore the world never seen before
+                    and what it take for your model to reach the skies.</p>
+            </div>
+
+        </section>
+        
+        <section >
+            <div class="domain">
+                <img src="aerial-icon-drone-icon-uav-icon-png-favpng-Ed1zZuTHwahy4ndDmZZK0W8fB-removebg-preview.png" alt="" class="tag-img">
+                <h3>60+ Active Members </h3>
+                <h3>8+ Domains </h3>
+                <h3>15+ Competitions Won </h3>
+                <img src="image-removebg-preview.png" alt="" class="tag-img" style="width: 40px;transform: rotateZ(-34deg); ">
+            </div>
+        </section>
+        <section class="rocket">
+            <img src="1000_F_195074422_uf8c1azULpDBxFXQbTsQd616K4p7WxFH-removebg-preview.png" alt="" class="tiltright">
+            <img src="1000_F_195074422_uf8c1azULpDBxFXQbTsQd616K4p7WxFH-removebg-preview.png" alt="" class="tiltleft">
+
+        </section>
+        <section>
+            <div class="comp">
+
+                <h1>Competitions</h1>
+            </div>
+        </section>
     </main>
-    </body>
-    
+
+    <br>
+     <p style="color: white;">
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cumque magnam ratione qui. Blanditiis itaque
+        consequatur dolore officia quia asperiores! Omnis sit odio sunt culpa fuga blanditiis labore ea nesciunt
+        provident
+        modi aut possimus ad, ducimus delectus debitis corrupti doloribus iure beatae nihil maiores dignissimos.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At qui quas temporibus in repellat consequatur tempora
+        iste impedit dolorem, non nulla nisi consequuntur accusamus quos. Aperiam aspernatur doloribus nam in deleniti
+        impedit numquam eligendi adipisci illum vel! Molestias obcaecati natus, quod impedit amet ducimus assumenda enim
+        atque perferendis. Debitis harum culpa, quidem distinctio earum ut explicabo. Reprehenderit sed culpa
+        sapiente?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis accusamus obcaecati iure recusandae
+        velit aperiam exercitationem voluptatum? Adipisci totam explicabo assumenda, aliquam similique doloremque? Alias
+        quas deleniti debitis dolore, sint voluptatibus ipsa nostrum iure molestiae optio repudiandae sed molestias,
+        reiciendis quo tempore, incidunt impedit odit esse quos aspernatur. Dicta sapiente omnis quia dolor neque
+        commodi in quidem ipsum accusantium corporis. Dolor aliquam, esse tempora omnis eos similique sint ducimus quod
+        facilis? Commodi, obcaecati ea harum porro quia assumenda! Commodi eum nemo vero dignissimos error. Vero illum
+        neque quas, pariatur hic consequatur dignissimos earum nostrum nisi voluptate odio. Ea, error tempore.</p>
+ 
+
+
+
+
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
 </html>
