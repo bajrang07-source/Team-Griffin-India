@@ -1,27 +1,20 @@
 * {
     padding: 0;
+    color: white;
     margin: 0;
 }
-body, html {
-    height: auto; /* Not 100% */
-    overflow-x: hidden; /* Only hides horizontal scroll */
-    /* z-index: 2; */
-  }
-body {
 
-    background-color: rgb(32, 32, 32);
+body {
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
 }
 nav {
     
     position: fixed;
     top: 0;
     z-index: 10;
-    border: 2px solid black;
-    background-color: black;
     font-family: sans-serif;
-    /* position: relative; */
-    height: 100px; /* Adjust based on design */
-    opacity: 0.7;
+    height: 70px; /* Adjust based on design */
     width: 100%;
 }
 
@@ -34,7 +27,7 @@ nav ul {
 
     justify-content: flex-end;
     align-items: center;
-    gap: 40px;
+    gap: 54px;
 }
 
 nav ul li {
@@ -45,29 +38,24 @@ nav ul li {
 
 nav ul a {
     text-decoration: none;
+    
 }
 
 nav ul a:hover {
-    border-bottom: 3px solid rgb(255, 132, 0);
+    border-bottom: 3px solid rgb(255, 132, 0);  
 }
-
-/* 
-nav ul a.active {
-  border-bottom: 3px solid red;
-} */
 .navflex {
     display: flex;
     justify-content: space-between;
 }
 
 .tgilogo {
-    padding: 10px;
-    margin-left: 40px;
+    padding: 0px;
+    margin-left: 54px;
 }
 
 .social {
-    margin-top: 37px;
-    margin-right: 25px;
+    margin: 24px 24px 0px 0px;
     width: 21px;
     padding: 8px;
 }
@@ -79,12 +67,10 @@ nav ul a.active {
     height: 100vh;
     width:100%;
     object-fit: cover;
-    z-index: 0;
+    z-index: -1;
+    opacity: 1;
     pointer-events: none;/* Ensure video doesn't block interaction */
 
-  }
-  main{
-    z-index: 2;
   }
 
 .imgrotate:hover {
@@ -92,6 +78,128 @@ nav ul a.active {
     border-radius: 5px;
     animation: rotateImage 1s ease-in-out 0.1s 1 ;
 }
+.LOGO{
+    margin-left: 557px;
+    width: 451px;
+    position: absolute;
+}
+.gap{
+    color: white;
+    /* margin-top: -80px; */
+    font-size: 3em;
+    text-align: center;
+}
+.scroll {
+    color: white;
+    /* margin-top: -80px; */
+    font-size: 3em;
+    text-align: center;
+}
+.shadow{
+    text-shadow: 6px 4px 5px #ff8f00;
+}
+.spacer{
+   margin-top: 80px;
+}
+.box{
+    width: 72vw;
+    height: 130px;
+    background-color: rgb(52, 51, 51);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 31px;
+    border-radius: 20px;
+    padding: 30px;
+    font-family: sans-serif;
+    box-shadow: 4px 5px 8px rgb(255, 132, 0);
+    border: 2px orange;
+
+}
+.box:hover{
+    background-color: #d07d10;
+    transform: scale3d(12px) ;
+    box-shadow: 8px 10px 5px rgb(87, 43, 1);
+}
+.box h1{
+    padding: 10px;
+    font-weight: bolder;
+    font-size: xx-large;
+    padding: 10px;
+}
+.box p{
+    font-size: large;
+    overflow: hidden;
+}
+.floatright{
+    transform: translateX(24%);
+    /* animation: contentright 2s ease-in-out 1s 1 ; */
+    flex-direction: row-reverse;
+}
+.floatleft{
+    overflow-x: hidden;
+    transform: translateX(27px);
+    /* animation: contentleft 2s ease-in-out 1s 1 ; */
+}
+.rocket{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    animation: rockets-Y 1s ease-out infinite alternate ;
+}
+.tiltright{
+    transform: rotateZ(45deg);
+    animation: rockets-X1 2s linear infinite alternate;
+    z-index: -1;
+}
+
+.tiltleft{
+    animation: rockets-X2 2s linear infinite alternate;
+    z-index: -1;
+    transform: rotateZ(-45deg);
+    
+}
+.rocket img{
+    width: 60px;
+    
+}
+.domain{
+    width: 100%;
+    height: 80px;
+    margin-top: 90px;
+    background-color: rgb(26, 30, 34);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tag-img{
+    transform: rotateZ(16deg);
+    width: 80px;
+    object-fit:contain;
+}
+.comp h1{
+    text-align: center;
+    font-size: 5em;
+}
+
+/* @keyframes contentleft {
+    0%{
+        left: 0;
+    }
+    100%{
+        transform: translateX(27px);
+    }
+}
+@keyframes contentright {
+    0%{
+        right: 0;
+    }
+    100%{
+        transform: translateX(20%);
+    }
+} */
+
 @keyframes rotateImage {
     0% {
       transform: rotate3d(0, 0, 0, 0deg);
@@ -99,4 +207,37 @@ nav ul a.active {
     100% {
       transform: rotate3d(0, 1, 0, 360deg);
     }
+}
+@keyframes rockets-Y{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(190%);
+    }
+
+}
+@keyframes rockets-X1{
+    0%{
+        transform: translatex(0);
+    }
+    /* 50%{
+        transform: translatex(25vw);
+    } */
+    100%{
+        transform: translatex(80%);
+    }
+
+}
+@keyframes rockets-X2{
+    0%{
+        transform: translatex(0);
+    }
+    /* 50%{
+        transform: translatex(25vw);
+    } */
+    100%{
+        transform: translatex(-80%);
+    }
+
 }
