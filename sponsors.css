@@ -48,7 +48,47 @@ body {
     padding: 10px;
 
 }
+.image-area {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+}
 
+.floating-text {
+  position: absolute;
+  pointer-events: none;
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 999;
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: orange;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    display: none;
+    z-index: 999;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#topBtn:hover {
+    background-color: #ff7300;
+}
+
+.show {
+    animation: Slidein 1s ease-in;
+}
 .logo-item p {
     text-align: center;
     padding: 10px;
