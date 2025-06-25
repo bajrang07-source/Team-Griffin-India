@@ -191,22 +191,7 @@ nav ul a:hover {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease;
 }
-/* 
-.vertical-godspeed {
-     position: fixed; 
-    top: 50%;
-    left: 80px;
-    transform: rotate(180deg) translateY(28%);
-    transform-origin: left center;
-    font-size: 50px;
-    font-family: 'Orbitron', sans-serif;
-    color: #f0c330;
-    letter-spacing: 5px;
-    writing-mode: vertical-rl;
-    optional enhancement 
-    text-shadow: 1px 1px 2px black;
-    z-index: 999;
-} */
+
 .vertical-godspeed img{
     justify-content: center;
     align-items: center;
@@ -295,6 +280,28 @@ nav ul a:hover {
     margin-top: 30px;
     font-size: 14px;
     color: #aaa;
+}
+#topBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: orange;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    display: none;
+    z-index: 999;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#topBtn:hover {
+    background-color: #ff7300;
+}
+
+.show {
+    animation: Slidein 1s ease-in;
 }
 @media screen and (max-width: 768px) {
     .navflex{
