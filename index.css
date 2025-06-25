@@ -285,25 +285,7 @@ nav ul a:hover {
     transform: scale(1.05);
 }
 
-/* #topBtn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 40px;
-    height: 40px;
-    background-color: #2d2d2c;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border-radius: 20px;
-    border: 2px black;
-    cursor: pointer;
-    display: none;
-    z-index: 999;
-    transition: opacity 0.3s ease;
-} */
+
 #topBtn {
     position: fixed;
     bottom: 40px;
