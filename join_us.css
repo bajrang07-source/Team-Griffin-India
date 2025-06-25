@@ -167,7 +167,32 @@ nav ul a:hover {
     --angle: 360deg;
   }
 }
+#topBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: orange;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    display: none;
+    z-index: 999;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+#topBtn:hover {
+    background-color: #ff7300;
+}
+
+.show {
+    animation: Slidein 1s ease-in;
+}
+.close{
+  text-align: center;
+  margin-top: 30px;
+}
 .footer {
     background-color: #101820;
     color: #fff;
