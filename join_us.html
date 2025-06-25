@@ -3,8 +3,14 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Join Us | Team Griffin India</title>
+    <meta name="description"
+        content="Become a part of Team Griffin India. Fill out the form to join our student aeronautics club and contribute to future aerospace innovations.">
+    <meta name="keywords"
+        content="join Team Griffin India, aeronautics club registration, student aerospace club, drone enthusiasts">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="https://chinmayp4526.github.io/Team-Griffin-India/join_us.html">
     <link rel="icon" type="image/x-icon" href="images/TGI LOGO(OG).png">
     <link rel="stylesheet" href="join_us.css" />
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
@@ -33,17 +39,18 @@
                 <ul>
 
                     <li><a href="/Team-Griffin-India/index.html" class=" nav-links">Home</a></li>
-                    <li><a href="gallery.html" class=" nav-links">Gallery</a></li>
-                    <li><a href="achievements.html" class=" nav-links">Achievements</a></li>
-                    <li><a href="domain.html" class=" nav-links">Domain</a></li>
-                    <li><a href="sponsors.html" class=" nav-links">Sponsors</a></li>
-                    <li><a href="join_us.html" class=" nav-links active">Join Us</a></li>
+                    <li><a href="/Team-Griffin-India/gallery.html" class=" nav-links">Gallery</a></li>
+                    <li><a href="/Team-Griffin-India/achievements.html" class=" nav-links">Achievements</a></li>
+                    <li><a href="/Team-Griffin-India/domain.html" class=" nav-links">Domain</a></li>
+                    <li><a href="/Team-Griffin-India/sponsors.html" class=" nav-links">Sponsors</a></li>
+                    <li><a href="/Team-Griffin-India/join_us.html" class=" nav-links active">Join Us</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-
+    <h1 class="close">The Forms are Temporarily Closed.... <br>Will Open Soon...</h1>
     <main class="join-section card">
+        
         <h1>Join Team Griffin India</h1>
         <p>We're always on the lookout for passionate individuals who are enthusiastic about aeronautics, coding, and
             innovation.</p>
@@ -64,7 +71,7 @@
             <button type="submit">Submit Application</button>
         </form>
     </main>
-
+    <button id="topBtn" class="show" onclick="scrollToTop()">Top ↑</button>
     <footer class="footer">
         <div class="footer-container">
             <div class="foot-img">
@@ -81,11 +88,11 @@
             <div class="footer-section links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="achivements.html">Achievements</a></li>
-                    <li><a href="domain.html">Domain</a></li>
-                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="/Team-Griffin-India/index.html">Home</a></li>
+                    <li><a href="/Team-Griffin-India/gallery.html">Gallery</a></li>
+                    <li><a href="/Team-Griffin-India/achievements.html">Achievements</a></li>
+                    <li><a href="/Team-Griffin-India/domain.html">Domain</a></li>
+                    <li><a href="/Team-Griffin-India/sponsors.html">Sponsors</a></li>
                 </ul>
             </div>
 
@@ -99,7 +106,8 @@
             <div class="footer-section socials">
                 <h3>Follow Us</h3>
                 <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-                <a href="http://instagram.com/teamgriffinindia/" target="_blank"><img src="images/insta.png" alt="Instagram"></a>
+                <a href="http://instagram.com/teamgriffinindia/" target="_blank"><img src="images/insta.png"
+                        alt="Instagram"></a>
                 <a href="https://www.linkedin.com/company/team-griffin-india/" target="_blank"><img
                         src="images/linkedin.png" alt="LinkedIn"></a>
             </div>
@@ -118,13 +126,12 @@
             <p>&copy; 2025 Team Griffin India. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <!-- Add this script just before closing body tag -->
+    <script src="script.js"></script>
     <script>
         const form = document.getElementById('joinForm');
 
         form.addEventListener('submit', async (e) => {
-            e.preventDefault(); // prevent default form submit
+            e.preventDefault(); 
 
             const data = {
                 name: form.name.value,
