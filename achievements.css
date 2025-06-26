@@ -493,56 +493,6 @@ h2 {
     inset: auto 0% 0%;
 }
 
-@media screen and (max-width: 767px) {
-    h2 {
-        font-size: 40px;
-    }
-
-    .paragraph-large {
-        font-size: 18px;
-    }
-
-    .padding-vertical-xlarge {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-    .timeline_item {
-        grid-template-columns: 64px 1fr;
-        width: 100%;
-    }
-
-    .timeline_left {
-        text-align: left;
-        grid-area: 1 / 2 / 2 / 3;
-    }
-
-    .timeline_centre {
-        justify-content: flex-start;
-        grid-area: 1 / 1 / 3 / 2;
-    }
-
-    .timeline_right {
-        grid-area: span 1 / span 1 / span 1 / span 1;
-    }
-
-    .timeline_date-text {
-        margin-bottom: 24px;
-        font-size: 36px;
-    }
-
-    .timeline_text {
-        font-size: 20px;
-    }
-
-    .timeline_progress {
-        left: 6px;
-    }
-
-    .margin-bottom-xlarge {
-        margin-bottom: 48px;
-    }
-}
 
 .card {
     margin: 0 auto;
@@ -553,6 +503,7 @@ h2 {
     border-radius: 10px;
     position: relative;
 }
+
 #topBtn {
     position: fixed;
     bottom: 40px;
@@ -577,59 +528,115 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-    .navflex {
-        width: 100%;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
     body {
         font-size: 16px;
+        /* padding: 0 10px; */
+        overflow-x: hidden;
     }
 
-    h1 {
-        font-size: 28px;
+    /* Navbar */
+    nav {
+        align-items: flex-start;
+        width: 100%;
+
     }
 
-    h3 {
-        font-size: 20px;
+    .navflex {
+        gap: 40px;
+        width: 100%;
+        margin-top: 20px;
     }
 
-
-    nav .navflex {
-        flex-direction: column;
-        align-items: center;
+    nav img {
+        width: 35px;
     }
 
-    nav ul {
+    .nav-links {
         flex-direction: column;
         width: 100%;
-        padding: 0;
-        margin: 0;
+        text-align: left;
     }
 
-    nav ul li {
+    .navflex ul {
+        gap: 10px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
         width: 100%;
-        text-align: center;
+        margin: 5px 0;
     }
 
-    .footer-container {
-        display: flex;
-        flex-direction: column;
+    .nav-links a {
+        display: block;
         padding: 10px;
     }
 
-    .footer-section {
-        width: 100%;
-        margin: 10px 0;
+    .tgilogo {
+        margin-left: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .map iframe {
+        width: 230px;
+        height: 200px;
+        object-fit: contain;
+    }
+
+    .footer-container {
+        gap: 27px;
+
+    }
+
+    h2 {
+        margin-top: -272px;
+    }
+
+    #topbtn {
+        width: 20px;
+        padding: 3px 9px;
+        font-size: 14px;
+
+    }
+
+    .show {
+        position: fixed;
+        bottom: 8%;
+        right: 14%;
+        animation: Slidein 1s ease-in;
+        padding: 3px 9px;
+        font-size: 14px;
+    }
+
+    @keyframes Slidein {
+        0% {
+            right: 250px;
+        }
+
+        100% {
+            right: 120px;
+        }
+
+    }
+
+    .timeline_centre .timeline_circle {
+        position: relative;
+        top: 20vh;
+        /* adjust for desired vertical stick point */
     }
 
     iframe {
         width: 90%;
         height: 200px;
+    }
+
+    .timeline_date-text {
+        font-size: 46px;
     }
 
     .timeline_item {
@@ -649,6 +656,297 @@ h2 {
         width: 100%;
         height: auto;
     }
-    
 
+
+}
+
+@media (max-width:426px) {
+    body {
+        font-size: 16px;
+        /* padding: 0 10px; */
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav {
+        align-items: flex-start;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 8.5px;
+    }
+
+    .navflex {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navflex ul {
+        gap: 0px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 5px;
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 5px;
+        padding: 0;
+        /* padding: 10px; */
+    }
+
+    .tgilogo {
+        display: none;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .card {
+        margin: 0 auto;
+        padding: 20px;
+        width: 300px;
+        background: #1c1f2b;
+        text-align: center;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .paragraph-large {
+        letter-spacing: -0.02em;
+        font-size: 14px;
+        /* z-index: 10; */
+    }
+
+    .timeline_date-text {
+        font-size: 22px;
+    }
+
+    .timeline_text {
+        font-size: 16px;
+    }
+
+    .timeline_text div {
+        font-size: 20px;
+    }
+
+    .timeline_item {
+        padding: 30px 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .map iframe {
+        width: 230px;
+        height: 200px;
+        object-fit: contain;
+    }
+
+    .footer-container {
+        gap: 27px;
+
+    }
+
+    #topbtn.hide {
+        display: none !important;
+        position: static;
+        animation: none;
+    }
+}
+
+@media (max-width:376px) {
+    body {
+        font-size: 16px;
+        /* padding: 0 10px; */
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav {
+        align-items: flex-start;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 7px;
+    }
+
+    .navflex {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navflex ul {
+        gap: 0px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 5px;
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 5px;
+        padding: 0;
+        /* padding: 10px; */
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .tgilogo {
+        display: none;
+    }
+
+    /* .timeline_text {
+        font-size: 12px;
+    }
+        .timeline_date-text {
+        font-size: 19px;
+    } */
+    .timeline_date-text {
+        font-size: 17px;
+    }
+
+    .timeline_text {
+        font-size: 13px;
+    }
+
+    .timeline_text div {
+        font-size: 18px;
+    }
+
+    .timeline_item {
+        padding: 25px 10px;
+    }
+
+
+#topbtn.hide {
+    display: none;
+    position: static;
+    animation: none;
+    width: 20px;
+    height: 10px;
+    padding: 3px 9px;
+    font-size: 14px;
+}
+}
+
+@media (max-width:320px) {
+    body {
+        font-size: 16px;
+        /* padding: 0 10px; */
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav {
+        align-items: flex-start;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 5px;
+    }
+
+    .navflex {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navflex ul {
+        gap: 0px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 5px;
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 5px;
+        padding: 0;
+        /* padding: 10px; */
+    }
+
+    .tgilogo {
+        display: none;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+    .timeline_date-text {
+        font-size: 13px;
+        /* margin-left: 50px; */
+    }
+
+  .timeline_text {
+    font-size: 11px;
+  }
+
+  .timeline_text div {
+    font-size: 16px;
+  }
+
+  .timeline_item {
+    padding: 20px 8px;
+  }
+    .card {
+        margin: 0 auto;
+        padding: 20px;
+        width: 233px;
+        background: #1c1f2b;
+        text-align: center;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .paragraph-large {
+        letter-spacing: -0.02em;
+        font-size: 11px;
+        /* z-index: 10; */
+    }
+
+    #topbtn.hide {
+        display: none;
+        position: static;
+        animation: none;
+        padding: 3px 9px;
+        font-size: 14px;
+    }
 }
