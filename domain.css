@@ -479,6 +479,7 @@ nav ul a:hover {
     }
     .card{
         height: 53vh;
+        margin-top: 140px;
     }
     .container {
         display: flex;
@@ -546,6 +547,7 @@ nav ul a:hover {
     }
     .card{
         height: 50vh;
+        margin-top: 150px;
     }
     #topbtn.hide {
         display: none;
@@ -607,7 +609,7 @@ nav ul a:hover {
         height: 37vh;
     }
     .container {
-        margin-top: 148px;
+        margin-top: 170px;
         display: flex;
         justify-content: center;
         align-items: center;
