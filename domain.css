@@ -94,7 +94,8 @@ nav ul a:hover {
     height: 50vh;
     /* background-size: 100% 100%; */
 }
-.domain{
+
+.domain {
     font-size: 65px;
     z-index: 10;
     margin-top: 105px;
@@ -106,7 +107,8 @@ nav ul a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.container{
+
+.container {
     margin-top: 200px;
     margin-bottom: 80px;
     display: grid;
@@ -116,25 +118,30 @@ nav ul a:hover {
     justify-content: center;
     align-items: center;
 }
-.card{
-  margin: 0 auto;
-  padding: 2em;
-  width: 350px;
-  background: #1c1f2b;
-  text-align: center;
-  border-radius: 10px;
-  position: relative;
-  height: 60vh;
+
+.card {
+    margin: 0 auto;
+    padding: 2em;
+    width: 350px;
+    background: #1c1f2b;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    height: 60vh;
 }
-.card p{
+
+.card p {
     justify-content: center;
     align-items: center;
 }
-.card h1{
+
+.card h1 {
     font-size: 35px;
     padding-bottom: 15px;
     margin-bottom: 5px;
+    text-align: center;
 }
+
 #topBtn {
     position: fixed;
     bottom: 40px;
@@ -158,38 +165,43 @@ nav ul a:hover {
     animation: Slidein 1s ease-in;
 }
 
-@property --angle{
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
 }
 
-.card::after, .card::before{
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -1;
-  padding: 3px;
-  border-radius: 10px;
-  animation: 3s spin linear infinite;
+.card::after,
+.card::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
 }
-.card::before{
-  filter: blur(1.5rem);
-  opacity: 0.5;
+
+.card::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
 }
-@keyframes spin{
-  from{
-    --angle: 0deg;
-  }
-  to{
-    --angle: 360deg;
-  }
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
 }
+
 .footer {
     background-color: #101820;
     color: #fff;
@@ -276,4 +288,337 @@ nav ul a:hover {
     margin-top: 30px;
     font-size: 14px;
     color: #aaa;
+}
+
+@media (max-width: 768px) {
+
+    /* General Reset */
+    body {
+        font-size: 16px;
+        /* padding: 0 10px; */
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav {
+        align-items: flex-start;
+        width: 100%;
+
+    }
+
+    .navflex {
+        gap: 40px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    nav img {
+        width: 35px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navflex ul {
+        gap: 10px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
+    }
+
+    .tgilogo {
+        margin-left: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .map iframe {
+        width: 230px;
+        height: 200px;
+        object-fit: contain;
+    }
+
+    .footer-container {
+        gap: 27px;
+
+    }
+
+
+    #topbtn {
+        width: 20px;
+        padding: 3px 9px;
+        font-size: 14px;
+
+    }
+
+    .show {
+        position: fixed;
+        bottom: 8%;
+        right: 14%;
+        animation: Slidein 1s ease-in;
+        padding: 3px 9px;
+        font-size: 14px;
+    }
+
+    @keyframes Slidein {
+        0% {
+            right: 250px;
+        }
+
+        100% {
+            right: 120px;
+        }
+
+    }
+
+    .domain {
+        font-size: 40px;
+    }
+
+    .card {
+        width: 267px;
+        height: 80vh;
+    }
+
+    .card p {
+        font-size: 13px;
+        height: 62vh;
+    }
+
+    .card h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+}
+
+@media (max-width:426px) {
+    body {
+        font-size: 16px;
+        /* padding: 0 10px; */
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav {
+        align-items: flex-start;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 8.5px;
+    }
+
+    .navflex {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navflex ul {
+        gap: 0px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 5px;
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 5px;
+        padding: 0;
+        /* padding: 10px; */
+    }
+
+    .tgilogo {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .map iframe {
+        width: 230px;
+        height: 200px;
+        object-fit: contain;
+    }
+
+    .footer-container {
+        gap: 27px;
+
+    }
+
+    #topbtn.hide {
+        display: none !important;
+        position: static;
+        animation: none;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:376px) {
+    body {
+        font-size: 16px;
+        /* padding: 0 10px; */
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav {
+        align-items: flex-start;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 7px;
+    }
+
+    .navflex {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navflex ul {
+        gap: 0px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 5px;
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 5px;
+        padding: 0;
+        /* padding: 10px; */
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .tgilogo {
+        display: none;
+    }
+
+    #topbtn.hide {
+        display: none;
+        position: static;
+        animation: none;
+        width: 20px;
+        height: 10px;
+        padding: 3px 9px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:320px) {
+    body {
+        font-size: 16px;
+        /* padding: 0 10px; */
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav {
+        align-items: flex-start;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 6px;
+    }
+
+    .navflex {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navflex ul {
+        gap: 0px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 5px;
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 5px;
+        padding: 0;
+        /* padding: 10px; */
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card{
+        width: 218px;
+        height: 87vh;
+    }
+    .tgilogo {
+        display: none;
+    }
+
+    #topbtn.hide {
+        display: none;
+        position: static;
+        animation: none;
+        padding: 3px 9px;
+        font-size: 14px;
+    }
 }
