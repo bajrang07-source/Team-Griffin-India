@@ -368,7 +368,7 @@ nav ul a:hover {
         top: 0;
         left: 0;
         width: 100vw;
-        height: 64vh;
+        height: 39vh;
         /* background-size: 100% 100%; */
     }
 
@@ -557,9 +557,11 @@ nav ul a:hover {
         padding: 0;
         /* padding: 10px; */
     }
-    .banner{
-        height: 40vh;
+
+    .banner {
+        height: 37vh;
     }
+
     .tgilogo {
         display: none;
     }
@@ -595,9 +597,11 @@ nav ul a:hover {
         /* padding: 0 10px; */
         overflow-x: hidden;
     }
-    .banner{
+
+    .banner {
         height: 34vh;
     }
+
     /* Navbar */
     nav {
         align-items: flex-start;
