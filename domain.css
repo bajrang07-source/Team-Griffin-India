@@ -477,7 +477,9 @@ nav ul a:hover {
         position: static;
         animation: none;
     }
-
+    .card{
+        height: 53vh;
+    }
     .container {
         display: flex;
         justify-content: center;
@@ -542,7 +544,9 @@ nav ul a:hover {
     .tgilogo {
         display: none;
     }
-
+    .card{
+        height: 50vh;
+    }
     #topbtn.hide {
         display: none;
         position: static;
@@ -599,8 +603,11 @@ nav ul a:hover {
         padding: 0;
         /* padding: 10px; */
     }
-
+    .banner{
+        height: 37vh;
+    }
     .container {
+        margin-top: 148px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -608,7 +615,7 @@ nav ul a:hover {
     }
     .card{
         width: 218px;
-        height: 87vh;
+        height: 56vh;
     }
     .tgilogo {
         display: none;
