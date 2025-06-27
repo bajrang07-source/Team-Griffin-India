@@ -478,15 +478,17 @@ nav ul a:hover {
     .hide {
         display: none;
     }
-.gallery-grid{
+
+    .gallery-grid {
         row-gap: 0px;
         align-items: center;
         justify-content: center;
     }
 
     .gallery-grid img {
-        object-fit:contain ;
+        object-fit: contain;
     }
+
     footer {
         flex-direction: column;
         text-align: center;
@@ -555,7 +557,9 @@ nav ul a:hover {
         padding: 0;
         /* padding: 10px; */
     }
-
+    .banner{
+        height: 40vh;
+    }
     .tgilogo {
         display: none;
     }
@@ -564,14 +568,14 @@ nav ul a:hover {
         display: none;
     }
 
-    .gallery-grid{
+    .gallery-grid {
         row-gap: 0px;
         align-items: center;
         justify-content: center;
     }
 
     .gallery-grid img {
-        object-fit:contain ;
+        object-fit: contain;
     }
 
     #topbtn.hide {
@@ -591,7 +595,9 @@ nav ul a:hover {
         /* padding: 0 10px; */
         overflow-x: hidden;
     }
-
+    .banner{
+        height: 34vh;
+    }
     /* Navbar */
     nav {
         align-items: flex-start;
@@ -638,15 +644,17 @@ nav ul a:hover {
     .hide {
         display: none;
     }
-.gallery-grid{
+
+    .gallery-grid {
         row-gap: 0px;
         align-items: center;
         justify-content: center;
     }
 
     .gallery-grid img {
-        object-fit:contain ;
+        object-fit: contain;
     }
+
     #topbtn.hide {
         display: none;
         position: static;
