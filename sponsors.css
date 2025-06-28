@@ -48,23 +48,24 @@ body {
     padding: 10px;
 
 }
+
 .image-area {
-  position: relative;
-  display: inline-block;
-  margin: 15px;
+    position: relative;
+    display: inline-block;
+    margin: 15px;
 }
 
 .floating-text {
-  position: absolute;
-  pointer-events: none;
-  display: none;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 6px 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  white-space: nowrap;
-  z-index: 999;
+    position: absolute;
+    pointer-events: none;
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 999;
 }
 
 #topBtn {
@@ -89,6 +90,7 @@ body {
 .show {
     animation: Slidein 1s ease-in;
 }
+
 .logo-item p {
     text-align: center;
     padding: 10px;
@@ -339,121 +341,409 @@ nav ul a:hover {
     -webkit-text-fill-color: transparent;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-    .logo-grid {
-        gap: 40px;
-    }
-
-    .logo-grid img {
-        width: 180px;
-    }
-
-    .sponsor-tier {
-        margin-top: 60px;
-    }
-
-    .mission {
-        padding: 20px 40px 40px 20px;
-        font-size: large;
-        margin: 20px 30px;
-    }
-
-    nav ul {
-        gap: 25px;
-    }
-
-    nav ul li {
-        font-size: 0.9rem;
-    }
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        justify-content: center;
-        gap: 15px;
-        flex-wrap: wrap;
+
+    /* General Reset */
+    body {
+        font-size: 16px;
+        /* padding: 0 10px; */
+        overflow-x: hidden;
     }
 
-    nav ul li {
-        font-size: 0.85rem;
+    /* Navbar */
+    nav {
+        align-items: flex-start;
+        width: 100%;
+
     }
 
-    .logo-grid {
-        gap: 30px;
+    .navflex {
+        gap: 40px;
+        width: 100%;
+        margin-top: 20px;
     }
 
-    .logo-grid img {
-        width: 140px;
+    nav img {
+        width: 35px;
     }
 
-    .logo-item {
-        padding: 8px;
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
     }
 
-    .mission {
-        padding: 20px 20px 30px 20px;
-        margin: 15px 20px;
-        font-size: medium;
+    .navflex ul {
+        gap: 10px;
+        margin-left: 0px;
+        margin-top: 10px;
     }
 
-    .banner {
-        height: 35vh;
+    .nav-links li {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
     }
 
     .tgilogo {
-        margin-left: 15px;
+        margin-left: 20px;
     }
 
-    .sponser h1 {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul {
-        gap: 10px;
+    footer {
+        flex-direction: column;
+        text-align: center;
     }
 
-    nav ul li {
-        font-size: 0.8rem;
-    }
-
-    .logo-grid {
-        gap: 20px;
-        justify-content: center;
-    }
-
-    .logo-grid img {
-        width: 120px;
-    }
-
-    .logo-item p {
-        font-size: 0.8rem;
-    }
-
-    .mission {
-        padding: 15px 10px 25px 10px;
-        margin: 10px 15px;
-        font-size: 0.9rem;
+    .map iframe {
+        width: 230px;
+        height: 200px;
+        object-fit: contain;
     }
 
     .footer-container {
+        gap: 27px;
+
+    }
+
+
+    #topbtn {
+        width: 20px;
+        padding: 3px 9px;
+        font-size: 14px;
+        display: none;
+
+    }
+
+    .contact {
         flex-direction: column;
-        align-items: center;
     }
 
-    .footer-section {
-        min-width: 100%;
+    .show {
+        position: fixed;
+        bottom: 8%;
+        right: 14%;
+        animation: Slidein 1s ease-in;
+        padding: 3px 9px;
+        font-size: 14px;
+    }
+
+    @keyframes Slidein {
+        0% {
+            right: 250px;
+        }
+
+        100% {
+            right: 120px;
+        }
+
+    }
+
+}
+
+@media (max-width:426px) {
+    body {
+        font-size: 16px;
+        /* padding: 0 10px; */
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav {
+        align-items: flex-start;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 8.5px;
+    }
+
+    .navflex {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navflex ul {
+        gap: 0px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 5px;
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 5px;
+        padding: 0;
+        /* padding: 10px; */
+    }
+
+    .tgilogo {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
         text-align: center;
-        margin-bottom: 25px;
     }
 
-    .footer-section.socials a {
-        margin: 0 5px;
+    .map iframe {
+        width: 230px;
+        height: 200px;
+        object-fit: contain;
+    }
+
+    .footer-container {
+        gap: 27px;
+
+    }
+
+    #topbtn.hide {
+        display: none !important;
+        position: static;
+        animation: none;
     }
 
     .banner {
-        height: 25vh;
+        height: 38vh;
+    }
+
+    .sponser h1 {
+        font-size: 35px;
+    }
+
+    .logo-grid {
+        gap: 16px;
+    }
+
+    .logo-grid img {
+        width: 99px;
+    }
+
+    .mission {
+        padding: 30px;
+    }
+
+    .mission p {
+        font-size: 16px;
+    }
+
+    .mission h3 {
+        font-size: 22px;
+    }
+
+    .contact {
+        padding: 13px;
+    }
+
+    .contact h4 {
+        font-size: 16px;
+
+    }
+
+    .space {
+        padding: 5px;
+    }
+
+    .mission li {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .mission blockquote {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:376px) {
+    body {
+        font-size: 16px;
+        /* padding: 0 10px; */
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav {
+        align-items: flex-start;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 7px;
+    }
+
+    .navflex {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navflex ul {
+        gap: 0px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 5px;
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 5px;
+        padding: 0;
+        /* padding: 10px; */
+    }
+
+    .tgilogo {
+        display: none;
+    }
+
+    #topbtn.hide {
+        display: none;
+        position: static;
+        animation: none;
+        width: 20px;
+        height: 10px;
+        padding: 3px 9px;
+        font-size: 14px;
+    }
+
+    .logo-grid {
+        gap: 10px;
+    }
+
+    .logo-grid img {
+        width: 74px;
+    }
+
+    .mission {
+        padding: 30px;
+        margin: 30px 11px;
+    }
+
+    .mission p {
+        font-size: 15px;
+    }
+
+    .mission h3 {
+        font-size: 21px;
+    }
+
+    .contact {
+        padding: 13px;
+    }
+
+    .contact h4 {
+        font-size: 14px;
+
+    }
+
+    .space {
+        padding: 5px;
+    }
+
+    .mission li {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .mission blockquote {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:320px) {
+    body {
+        font-size: 16px;
+        /* padding: 0 10px; */
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav {
+        align-items: flex-start;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 6px;
+    }
+
+    .navflex {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navflex ul {
+        gap: 0px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 5px;
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 5px;
+        padding: 0;
+        /* padding: 10px; */
+    }
+
+    .tgilogo {
+        display: none;
+    }
+
+    #topbtn.hide {
+        display: none;
+        position: static;
+        animation: none;
+        padding: 3px 9px;
+        font-size: 14px;
+    }
+
+    .logo-grid img {
+        width: 57px;
+    }
+
+    .banner {
+        height: 32vh;
+    }
+
+    #why-sponsor-us {
+        padding: 4rem 1rem;
     }
 }
