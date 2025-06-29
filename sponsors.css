@@ -342,7 +342,7 @@ nav ul a:hover {
 }
 
 .contact {
-    display: flex;
+    display: inline-block;
     justify-content: space-around;
     align-items: center;
 }
@@ -413,6 +413,9 @@ nav ul a:hover {
     .footer-container {
         gap: 27px;
 
+    }
+    .banner{
+        height: 46vh;
     }
 
 
@@ -523,9 +526,11 @@ nav ul a:hover {
     }
 
     .banner {
-        height: 38vh;
+        height: 33vh;
     }
-
+    .image-area{
+        margin: 10px;
+    }
     .sponser h1 {
         font-size: 35px;
     }
